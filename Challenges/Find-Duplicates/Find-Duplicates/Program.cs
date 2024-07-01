@@ -1,11 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace challenges_and_data_structures2
+﻿namespace Find_Duplicates
 {
-    public class FindDuplicates
+    internal class Program
     {
-        public void FindAndPrintDuplicates()
+        static void Main(string[] args)
+        {
+            FindAndPrintDuplicates();
+            Console.WriteLine();
+        }
+
+        public static void FindAndPrintDuplicates()
         {
             int[] arr = { 1, 2, 3, 1, 2, 3 };
             List<int> duplicates = new List<int>();

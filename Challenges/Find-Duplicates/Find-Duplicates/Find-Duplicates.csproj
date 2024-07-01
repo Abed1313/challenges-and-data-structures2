@@ -3,13 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>challenges_and_data_structures2</RootNamespace>
+    <RootNamespace>Find_Duplicates</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CommonElementsTest\CommonElementsTest.csproj" />
-  </ItemGroup>
 
 </Project>

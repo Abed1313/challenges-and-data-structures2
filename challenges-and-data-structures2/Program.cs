@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace challenges_and_data_structures2
 {
@@ -6,8 +7,7 @@ namespace challenges_and_data_structures2
     {
         static void Main(string[] args)
         {
-            FindDuplicates findDuplicates = new FindDuplicates();
-            findDuplicates.FindAndPrintDuplicates();
+            
         }
     }
 }

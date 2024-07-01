@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "challenges-and-data-structures2", "challenges-and-data-structures2\challenges-and-data-structures2.csproj", "{33E44AD8-B4F2-4BBA-A6F1-751FD0B0AED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "challenges-and-data-structures2", "challenges-and-data-structures2\challenges-and-data-structures2.csproj", "{33E44AD8-B4F2-4BBA-A6F1-751FD0B0AED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonElementsTest", "CommonElementsTest\CommonElementsTest.csproj", "{AE3A7770-B979-4AB5-8083-146B1B1DEED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{33E44AD8-B4F2-4BBA-A6F1-751FD0B0AED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33E44AD8-B4F2-4BBA-A6F1-751FD0B0AED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33E44AD8-B4F2-4BBA-A6F1-751FD0B0AED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3A7770-B979-4AB5-8083-146B1B1DEED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3A7770-B979-4AB5-8083-146B1B1DEED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3A7770-B979-4AB5-8083-146B1B1DEED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3A7770-B979-4AB5-8083-146B1B1DEED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
