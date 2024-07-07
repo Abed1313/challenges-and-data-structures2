@@ -4,7 +4,7 @@ namespace Reverse_Words
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             string[] testCases = new string[]
             {
@@ -22,7 +22,7 @@ namespace Reverse_Words
             }
         }
 
-        public static string ReverseWords(string sentence)
+        public string ReverseWords(string sentence)
         {
             string[] words = sentence.Split(' ');
             Array.Reverse(words);
