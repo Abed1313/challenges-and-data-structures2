@@ -24,3 +24,4 @@
 
 ### Challenge 06-A: Find Common Elements in Two Arrays [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Challenges/Common-Elements/Common-Elements/README.md)
 
+### Challenge 6-B: Reverse Words [Link](https://github.com/Abed1313/challenges-and-data-structures2/tree/Reverse-Words/Challenges/Reverse-Words/Reverse-Words)
