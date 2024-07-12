@@ -76,13 +76,23 @@ namespace LinkedList
         //Print the contents of the list in order.
         public void DisplayList()
         {
-            Console.WriteLine("Iterating thrw list...");
             Node current = First;
             while (current != null)
             {
                 current.DesplayData();
                 current = current.Next;
             }
+        }
+        public int GetLength()
+        {
+            int length = 0;
+            Node current = First;
+            while (current != null)
+            {
+                length++;
+                current = current.Next;
+            }
+            return length;
         }
     }
 }
