@@ -27,12 +27,15 @@
             linkedList.INsertFirst(4);
 
             linkedList.DeleteSpecifiedData(2);
-            linkedList.Remove(3);
-
-
-
 
             linkedList.DisplayList();
+
+            linkedList.Inclode(3);
+
+
+
+
+            
 
         }
     }

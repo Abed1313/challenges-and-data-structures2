@@ -22,7 +22,7 @@ namespace LinkedList
             //Make the first the new node
             First = newNode;
         }
-        //test 1 for delete
+        //Remove the first node with the specified data from the linkedlist.
         public void DeleteSpecifiedData(int data)
         {
             //Assign The Temprory Variables
@@ -46,8 +46,8 @@ namespace LinkedList
                 temp = temp.Next;
             }
         }
-        //test 2 for delete
-        public void Remove(int data)
+        // Check if the linked List contains a node with the specified value.
+        public void Inclode(int data)
         {
             if (First == null) return;
 
@@ -57,16 +57,23 @@ namespace LinkedList
                 return;
             }
             Node current = First;
-            while (current.Next != null && current.Next.Data != data)
+            while (current.Next != null)
             {
+                if (current.Next.Data == data)
+                {
+                    Console.WriteLine("this is the data: " + data);
+                    break;
+                }
                 current = current.Next;
-            }
 
-            if (current.Next != null)
-            {
-                current.Next = current.Next.Next;
             }
+                if(current.Next == null)
+                {
+                    Console.WriteLine("not founde");
+                }
+            
         }
+        //Print the contents of the list in order.
         public void DisplayList()
         {
             Console.WriteLine("Iterating thrw list...");
