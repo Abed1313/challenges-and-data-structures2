@@ -13,7 +13,7 @@ namespace LinkedList
 
         public void DesplayData()
         {
-            Console.WriteLine(Data);
+            Console.Write(Data);
         }
     }
 
