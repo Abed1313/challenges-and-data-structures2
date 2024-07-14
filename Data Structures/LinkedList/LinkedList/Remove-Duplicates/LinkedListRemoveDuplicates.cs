@@ -4,7 +4,7 @@ namespace LinkedList
 {
     public static class LinkedListRemoveDuplicates
     {
-        public static void RemoveDuplicate(LinkedList linkedList)
+        public static void RemoveDuplicate(LinkedListt linkedList)
         {
             Node current = linkedList.First;
             while (current != null)

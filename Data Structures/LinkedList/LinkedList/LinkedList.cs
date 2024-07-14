@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    public class LinkedList
+    public class LinkedListt
     {
         public Node First { get; set; }
 
@@ -114,6 +114,19 @@ namespace LinkedList
                 current = current.Next;
             }
             return length;
+        }
+        public int[] GetLinkedListData(LinkedListt linkedList)
+        {
+            var current = linkedList.First;
+            var result = new List<int>();
+
+            while (current != null)
+            {
+                result.Add(current.Data);
+                current = current.Next;
+            }
+
+            return result.ToArray();
         }
     }
 }

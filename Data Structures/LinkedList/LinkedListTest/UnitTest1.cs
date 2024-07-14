@@ -1,4 +1,8 @@
 using Moq;
+using LinkedList;
+using System;
+using System.Collections.Generic;
+using Xunit;
 
 namespace LinkedListTest
 {
@@ -8,7 +12,7 @@ namespace LinkedListTest
         public void RemoveTest()
         {
             //Arreng
-            LinkedList.LinkedList linkedList = new LinkedList.LinkedList();
+            LinkedListt linkedList = new LinkedListt();
             linkedList.INsertFirst(1);
             linkedList.INsertFirst(2);
             linkedList.INsertFirst(3);
@@ -27,17 +31,17 @@ namespace LinkedListTest
         public void DisplayListFirst()
         {
             //Arreng
-            LinkedList.LinkedList linkedList = new LinkedList.LinkedList();
-            linkedList.INsertFirst(1);
-            linkedList.INsertFirst(2);
-            linkedList.INsertFirst(3);
-            linkedList.INsertFirst(4);
+            LinkedListt linkedListt = new LinkedListt();
+            linkedListt.INsertFirst(1);
+            linkedListt.INsertFirst(2);
+            linkedListt.INsertFirst(3);
+            linkedListt.INsertFirst(4);
             string Expected = "4321";
 
             //Act
             var Act = new StringWriter();
             Console.SetOut(Act);
-            linkedList.DisplayList();
+            linkedListt.DisplayList();
             string Actual = Act.ToString();
 
             //Assert
