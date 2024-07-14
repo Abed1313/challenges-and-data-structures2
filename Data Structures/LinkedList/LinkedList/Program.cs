@@ -7,7 +7,7 @@ namespace LinkedList
         static void Main(string[] args)
         {
 
-            LinkedList linkedList = new LinkedList();
+            LinkedListt linkedList = new LinkedListt();
             linkedList.INsertFirst(2);
             linkedList.INsertFirst(2);
             linkedList.INsertFirst(3);
