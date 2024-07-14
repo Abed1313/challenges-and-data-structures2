@@ -23,6 +23,27 @@ namespace LinkedList
             First = newNode;
         }
         //Remove the first node with the specified data from the linkedlist.
+        public void RemoveDuplicate()
+        {
+            Node current = First;
+            while (current != null)
+            {
+                Node runner = current;
+                while (runner.Next != null)
+                {
+                    if (runner.Next.Data == current.Data)
+                    {
+                        runner.Next = runner.Next.Next;
+                    }
+                    else
+                    {
+                        runner = runner.Next;
+                    }
+                }
+
+                current = current.Next;
+            }
+        }
         public void DeleteSpecifiedData(int data)
         {
             //Assign The Temprory Variables
