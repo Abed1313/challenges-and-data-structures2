@@ -28,4 +28,5 @@
 ### Challenge Linked List Implementation [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/Linked-List-Implementation/Data%20Structures/LinkedList/LinkedList/README.md)
 
 ### Challenge 6-B: Reverse Words [Link](https://github.com/Abed1313/challenges-and-data-structures2/tree/Reverse-Words/Challenges/Reverse-Words/Reverse-Words)
+###Linked List Remove Duplicates Challenge [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/LinkedList/LinkedList/Remove-Duplicates/README.md)
 
