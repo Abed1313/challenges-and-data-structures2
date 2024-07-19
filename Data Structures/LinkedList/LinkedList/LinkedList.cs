@@ -1,31 +1,97 @@
 ﻿using LinkedList;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LinkedList
 {
     public class LinkedListt
     {
-        public Node First { get; set; }
+        public Node Head { get; set; }
 
-        public void INsertFirst(int data)
+        public void InsertFirst(int data)
         {
-            //Create the node 
-            Node newNode = new Node();
-            //Put the data in the node 
-            newNode.Data = data;
-            //Put the old date in the next
-            newNode.Next = First;
-            //Make the first the new node
-            First = newNode;
+            Node newNode = new Node
+            {
+                Data = data,
+                Next = Head
+            };
+            Head = newNode;
         }
-        //Remove the first node with the specified data from the linkedlist.
+
+        public void InsertLast(int data)
+        {
+            Node newNode = new Node
+            {
+                Data = data
+            };
+
+            if (Head == null)
+            {
+                Head = newNode;
+                return;
+            }
+
+            Node current = Head;
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+
+            current.Next = newNode;
+        }
+
+        public void MergeSort(Node list1, Node list2)
+        {
+            if (list1 == null)
+            {
+                Head = list2;
+                return;
+            }
+            if (list2 == null)
+            {
+                Head = list1;
+                return;
+            }
+            Node MergedHead;
+            if (list1.Data <= list2.Data)
+            {
+                MergedHead = list1;
+                list1 = list1.Next;
+            }
+            else
+            {
+                MergedHead = list2;
+                list2 = list2.Next;
+            }
+            Node current = MergedHead;
+            while (list1 != null && list2 != null)
+            {
+                if (list1.Data <= list2.Data)
+                {
+                    current.Next = list1;
+                    list1 = list1.Next;
+                }
+                else
+                {
+                    current.Next = list2;
+                    list2 = list2.Next;
+                }
+                current = current.Next;
+            }
+            if (list1 != null)
+            {
+                current.Next = list1;
+            }
+            else
+            {
+                current.Next = list2;
+            }
+            Head = MergedHead;
+        }
+
         public void RemoveDuplicate()
         {
-            Node current = First;
+            Node current = Head;
             while (current != null)
             {
                 Node runner = current;
@@ -44,10 +110,10 @@ namespace LinkedList
                 current = current.Next;
             }
         }
+
         public void DeleteSpecifiedData(int data)
         {
-            //Assign The Temprory Variables
-            Node temp = First;
+            Node temp = Head;
             Node prev = null;
             while (temp != null)
             {
@@ -55,7 +121,7 @@ namespace LinkedList
                 {
                     if (prev == null)
                     {
-                        First = temp.Next;
+                        Head = temp.Next;
                     }
                     else
                     {
@@ -67,47 +133,37 @@ namespace LinkedList
                 temp = temp.Next;
             }
         }
-        // Check if the linked List contains a node with the specified value.
-        public void Inclode(int data)
-        {
-            if (First == null) return;
 
-            if (First.Data == data)
-            {
-                First = First.Next;
-                return;
-            }
-            Node current = First;
-            while (current.Next != null)
-            {
-                if (current.Next.Data == data)
-                {
-                    Console.WriteLine("this is the data: " + data);
-                    break;
-                }
-                current = current.Next;
-
-            }
-                if(current.Next == null)
-                {
-                    Console.WriteLine("not founde");
-                }
-            
-        }
-        //Print the contents of the list in order.
-        public void DisplayList()
+        public void Include(int data)
         {
-            Node current = First;
+            Node current = Head;
             while (current != null)
             {
-                current.DesplayData();
+                if (current.Data == data)
+                {
+                    Console.WriteLine("This is the data: " + data);
+                    return;
+                }
                 current = current.Next;
             }
+            Console.WriteLine("Not found");
         }
+
+        public void DisplayList()
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                current.DisplayData();
+                current = current.Next;
+            }
+            Console.WriteLine();
+        }
+
         public int GetLength()
         {
             int length = 0;
-            Node current = First;
+            Node current = Head;
             while (current != null)
             {
                 length++;
@@ -115,9 +171,10 @@ namespace LinkedList
             }
             return length;
         }
+
         public int[] GetLinkedListData(LinkedListt linkedList)
         {
-            var current = linkedList.First;
+            var current = Head;
             var result = new List<int>();
 
             while (current != null)

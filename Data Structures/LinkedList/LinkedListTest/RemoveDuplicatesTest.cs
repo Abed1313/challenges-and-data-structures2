@@ -12,10 +12,10 @@ namespace LinkedListTest.LinkedList
         {
             // Arrange
             LinkedListt linkedListt = new LinkedListt();
-            linkedListt.INsertFirst(4);
-            linkedListt.INsertFirst(3);
-            linkedListt.INsertFirst(2);
-            linkedListt.INsertFirst(1);
+            linkedListt.InsertFirst(4);
+            linkedListt.InsertFirst(3);
+            linkedListt.InsertFirst(2);
+            linkedListt.InsertFirst(1);
 
             // Act
              LinkedListRemoveDuplicates.RemoveDuplicate(linkedListt);
@@ -31,10 +31,10 @@ namespace LinkedListTest.LinkedList
         {
             // Arrange
             LinkedListt linkedListt = new LinkedListt();
-            linkedListt.INsertFirst(3);
-            linkedListt.INsertFirst(2);
-            linkedListt.INsertFirst(3);
-            linkedListt.INsertFirst(1);
+            linkedListt.InsertFirst(3);
+            linkedListt.InsertFirst(2);
+            linkedListt.InsertFirst(3);
+            linkedListt.InsertFirst(1);
 
             // Act
             LinkedListRemoveDuplicates.RemoveDuplicate(linkedListt);
@@ -49,10 +49,10 @@ namespace LinkedListTest.LinkedList
         {
             // Arrange
             LinkedListt linkedListt = new LinkedListt();
-            linkedListt.INsertFirst(1);
-            linkedListt.INsertFirst(1);
-            linkedListt.INsertFirst(1);
-            linkedListt.INsertFirst(1);
+            linkedListt.InsertFirst(1);
+            linkedListt.InsertFirst(1);
+            linkedListt.InsertFirst(1);
+            linkedListt.InsertFirst(1);
 
             // Act
             LinkedListRemoveDuplicates.RemoveDuplicate(linkedListt);
