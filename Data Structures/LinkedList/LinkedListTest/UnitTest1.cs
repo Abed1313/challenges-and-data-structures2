@@ -13,10 +13,10 @@ namespace LinkedListTest
         {
             //Arreng
             LinkedListt linkedList = new LinkedListt();
-            linkedList.INsertFirst(1);
-            linkedList.INsertFirst(2);
-            linkedList.INsertFirst(3);
-            linkedList.INsertFirst(4);
+            linkedList.InsertFirst(1);
+            linkedList.InsertFirst(2);
+            linkedList.InsertFirst(3);
+            linkedList.InsertFirst(4);
 
             //Act
             int Actual = linkedList.GetLength();
@@ -32,10 +32,10 @@ namespace LinkedListTest
         {
             //Arreng
             LinkedListt linkedListt = new LinkedListt();
-            linkedListt.INsertFirst(1);
-            linkedListt.INsertFirst(2);
-            linkedListt.INsertFirst(3);
-            linkedListt.INsertFirst(4);
+            linkedListt.InsertFirst(1);
+            linkedListt.InsertFirst(2);
+            linkedListt.InsertFirst(3);
+            linkedListt.InsertFirst(4);
             string Expected = "4321";
 
             //Act

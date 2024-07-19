@@ -6,7 +6,7 @@ namespace LinkedList
     {
         public static void RemoveDuplicate(LinkedListt linkedList)
         {
-            Node current = linkedList.First;
+            Node current = linkedList.Head;
             while (current != null)
             {
                 Node runner = current;
