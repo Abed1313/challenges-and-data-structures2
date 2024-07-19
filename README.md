@@ -30,3 +30,5 @@
 
 ### Linked List Remove Duplicates Challenge [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/LinkedList/LinkedList/Remove-Duplicates/README.md)
 
+### Linked List Merge Sorted Lists Challenge [Link](https://github.com/Abed1313/challenges-and-data-structures2/tree/LinkedList-Merge-Sorted/Data%20Structures/LinkedList/LinkedList/MergeSorted)
+
