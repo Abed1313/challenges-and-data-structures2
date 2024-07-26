@@ -32,3 +32,8 @@
 
 ### Linked List Merge Sorted Lists Challenge [Link](https://github.com/Abed1313/challenges-and-data-structures2/tree/LinkedList-Merge-Sorted/Data%20Structures/LinkedList/LinkedList/MergeSorted)
 
+## Stack and Queue Implementation
+### Whiteboard
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/StackAndQWhitporde.PNG)
+### output
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/StackAndQ.PNG)
