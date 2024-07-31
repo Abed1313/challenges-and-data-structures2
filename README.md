@@ -37,3 +37,5 @@
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/StackAndQWhitporde.PNG)
 ### output
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/StackAndQ.PNG)
+## Reverse-Stack-Using-Queue
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20&%20Queue/StackAndQueue/ReverseStackUsingQueue/README.md)
