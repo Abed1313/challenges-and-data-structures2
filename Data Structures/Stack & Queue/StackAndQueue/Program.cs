@@ -1,4 +1,5 @@
-﻿using StackAndQueue.Queue;
+﻿using StackAndQueue.DeleteMiddleElement;
+using StackAndQueue.Queue;
 using StackAndQueue.ReverseStackUsingQueue;
 using StackAndQueue.Stack;
 
@@ -67,6 +68,23 @@ namespace StackAndQueue
             reverseStack.ReverseStack();
             Console.WriteLine("Stack After Reversing Again:");
             reverseStack.PrintStack();
+
+            //Stack With Delete Middle
+            Console.WriteLine("=============== Stack With Delete Middle ===============");
+            StackClass stack2 = new StackClass();
+            
+            stack2.Push(25);
+            stack2.Push(20);
+            stack2.Push(15);
+            stack2.Push(10);
+            stack2.Push(5);
+            stack2.Push(7);
+            stack2.PrintStack();
+            Console.WriteLine("After");
+            StackWithDeleteMiddle.DeleteMiddle(stack2);
+            stack2.PrintStack();
+
+
         }
     }
 }
