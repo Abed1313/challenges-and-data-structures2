@@ -39,3 +39,9 @@
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/StackAndQ.PNG)
 ## Reverse-Stack-Using-Queue
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Stack%20&%20Queue/StackAndQueue/ReverseStackUsingQueue/README.md)
+
+## Delete Middle Element of a Stack
+### Whiteboard:
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/Delete-Middle-Element-Stack/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/WWWWh.PNG)
+### output:
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/Delete-Middle-Element-Stack/Data%20Structures/Stack%20%26%20Queue/StackAndQueue/assets/As.PNG)
