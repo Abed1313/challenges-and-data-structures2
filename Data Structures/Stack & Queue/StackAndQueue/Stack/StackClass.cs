@@ -9,12 +9,22 @@ namespace StackAndQueue.Stack
     public class StackClass
     {
         private Node top;
-
+        
         public StackClass()
         {
             top = null;
         }
-
+        public int Count()
+        {
+            int count = 0;
+            Node current = top;
+            while (current != null)
+            {
+                count++;
+                current = current.Next;
+            }
+            return count;
+        }
         // Push method
         public void Push(int data)
         {
