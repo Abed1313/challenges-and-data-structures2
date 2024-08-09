@@ -84,6 +84,38 @@ namespace StackAndQueue
             StackWithDeleteMiddle.DeleteMiddle(stack2);
             stack2.PrintStack();
 
+            // Min Stack
+            MinStack.MinStack minStack = new MinStack.MinStack();
+            minStack.Push(15);
+            minStack.Push(7);
+            minStack.Push(12);
+            minStack.Push(3);
+
+            minStack.PrintStack();
+
+            int min = minStack.GetMin();
+            Console.WriteLine("Min: " + min);
+
+            int popped = minStack.Pop();
+            Console.WriteLine("Popped: " + popped);
+
+            minStack.PrintStack();
+
+            min = minStack.GetMin();
+            Console.WriteLine("Min: " + min);
+
+            int peeked = minStack.Top();
+            Console.WriteLine("Top: " + peeked);
+
+            minStack.Push(2);
+            minStack.PrintStack();
+
+            min = minStack.GetMin();
+            Console.WriteLine("Min: " + min);
+
+            bool isEmpty = minStack.IsEmpty();
+            Console.WriteLine("IsEmpty: " + isEmpty);
+
 
         }
     }
