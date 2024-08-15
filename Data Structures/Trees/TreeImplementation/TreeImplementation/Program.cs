@@ -1,4 +1,6 @@
-﻿namespace TreeImplementation
+﻿using TreeImplementation.MirrorTree;
+
+namespace TreeImplementation
 {
     internal class Program
     {
@@ -12,49 +14,26 @@
             BTree.Insert(7);
             BTree.Insert(15);
 
-            // Pre Order Traversal
-            Console.WriteLine("Pre Order Traversal");
-            BTree.PreOrderTraversal(BTree.Root);
-            Console.WriteLine("\n----------------------------");
-
             // In Order Traversal
             Console.WriteLine("In Order Traversal");
             BTree.InOrderTraversal(BTree.Root);
             Console.WriteLine("\n----------------------------");
 
-            // Post Order Traversal
-            Console.WriteLine("Post Order Traversal");
-            BTree.PostOrderTraversal(BTree.Root);
+            
+
+            MirrorTree.MirrorTree mirror = new MirrorTree.MirrorTree(10);
+
+            mirror.Insert(5);
+            mirror.Insert(18);
+            mirror.Insert(3);
+            mirror.Insert(7);
+            mirror.Insert(15);
+
+            Console.WriteLine("In Order Traversal Mirror Tree");
+            //mirror.InOrderTraversal2(mirror.Root);
+            List<int> mirroredInorder = mirror.InOrderTraversal2(mirror.Root);
+            Console.WriteLine("Mirrored inorder: " + string.Join(", ", mirroredInorder));
             Console.WriteLine("\n----------------------------");
-
-            /////////////////////////////////////// Binary Search Tree /////////////////////////////////////
-            // Creating the following BST
-            //      50
-            //     /  \
-            //    30   70
-            //   / \   / \
-            //  20 40 60 80
-            BinarySearchTree BSTrre = new BinarySearchTree(50);
-
-            BSTrre.Add(30);
-            BSTrre.Add(20);
-            BSTrre.Add(40);
-            BSTrre.Add(70);
-            BSTrre.Add(60);
-            BSTrre.Add(80);
-            BSTrre.InOrderTraversalBST(BSTrre.Root);
-            Console.WriteLine();
-
-            // Check if 40 exists in the tree
-            Console.WriteLine(BSTrre.Contains(40) ? "Found" : "Not Found");
-            
-            // Delete 40 from the tree
-            BSTrre.Delete(40);
-            BSTrre.InOrderTraversalBST(BSTrre.Root);
-            Console.WriteLine();
-            
-
-            Console.WriteLine(BSTrre.Contains(40) ?"Found" : "Not Found");
 
             Console.ReadKey();
         }
