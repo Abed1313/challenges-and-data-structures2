@@ -35,6 +35,18 @@ namespace TreeImplementation
             Console.WriteLine("Mirrored inorder: " + string.Join(", ", mirroredInorder));
             Console.WriteLine("\n----------------------------");
 
+
+            BinaryTree Btree = new BinaryTree(10);
+            Btree.Root.Left = new TNode(5);
+            Btree.Root.Right = new TNode(20);
+            Btree.Root.Left.Left = new TNode(3);
+            Btree.Root.Left.Right = new TNode(7);
+            Btree.Root.Right.Left = new TNode(15);
+            Btree.Root.Right.Right = new TNode(25);
+
+            int secondMax = Btree.FindSecondMax(); // Output: 20
+            Console.WriteLine("Second Maximum Value: " + secondMax);
+
             Console.ReadKey();
         }
     }

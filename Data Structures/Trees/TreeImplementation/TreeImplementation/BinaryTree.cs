@@ -48,7 +48,47 @@ namespace TreeImplementation
                 }
             }
         }
+        public int FindSecondMax()
+        {
+            if (Root == null)
+            {
+                throw new InvalidOperationException("Tree is empty");
+            }
 
+            if (Root.Left == null && Root.Right == null)
+            {
+                throw new InvalidOperationException("Tree has only one node");
+            }
+
+            return FindSecondMax(Root).Value;
+        }
+
+        private TNode FindSecondMax(TNode node)
+        {
+            // Traverse to the rightmost node
+            TNode parent = null;
+            while (node.Right != null)
+            {
+                parent = node;
+                node = node.Right;
+            }
+
+            if (node.Left != null)
+            {
+                return FindMax(node.Left);
+            }
+
+            return parent;
+        }
+
+        private TNode FindMax(TNode node)
+        {
+            while (node.Right != null)
+            {
+                node = node.Right;
+            }
+            return node;
+        }
         // ( Root - Left - Right )
         public void PreOrderTraversal(TNode node)
         {
