@@ -52,3 +52,4 @@
 ## Mirror Tree
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MirrorTree/README.md)
 ## Second Maximum
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/SecondMaxValue/README.md)
