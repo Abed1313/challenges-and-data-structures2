@@ -6,6 +6,6 @@ It then traverses to the rightmost node (the largest value).
 If this node has a left subtree, the second largest value is found in that subtree.
 Otherwise, the second largest value is the parent of the largest node.
 ### WhiteBored
-![WhiteBored](assets/SecondMaximumWhitPord.PNG)
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/assets/SecondMaximumWhitPord.PNG)
 ### Output
-![Output](assets/SecondMaximumOutput.PNG)
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/assets/SecondMaximumOutput.PNG)
