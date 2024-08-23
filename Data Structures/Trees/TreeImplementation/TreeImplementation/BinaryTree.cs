@@ -89,6 +89,21 @@ namespace TreeImplementation
             }
             return node;
         }
+        public int LeafSum(TNode node)
+        {
+            if (node == null)
+            {
+                return 0;   
+            }
+            if ((node.Left == null) && (node.Right == null))
+            {
+                return node.Value;
+            }
+            int left = LeafSum(node.Left);
+            int right = LeafSum(node.Right);
+            return left + right;
+
+        }
         // ( Root - Left - Right )
         public void PreOrderTraversal(TNode node)
         {
