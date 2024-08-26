@@ -62,6 +62,27 @@ namespace TreeImplementation
             int leafSum = BtreeLeafSum.LeafSum(BtreeLeafSum.Root); 
             Console.WriteLine("leafSum Value: " + leafSum);
 
+            Console.WriteLine("\nLargest Level Value");
+            BinaryTree Btree14 = new BinaryTree(5);
+            Btree14.Root = new TNode(5);
+            Btree14.Root.Left = new TNode(13);
+            Btree14.Root.Right = new TNode(7);
+            Btree14.Root.Left.Left = new TNode(3);
+            Btree14.Root.Left.Right = new TNode(7);
+            Btree14.Root.Right.Left = new TNode(12);
+            Btree14.Root.Right.Right = new TNode(20);
+            Btree14.Root.Left.Left.Left = new TNode(1);
+            Btree14.Root.Left.Left.Right = new TNode(4);
+            Btree14.Root.Right.Left.Right = new TNode(11);
+
+            List<int> largestValues = Btree14.LargestLevelValue();
+
+            Console.WriteLine("Largest values at each level:");
+            foreach (var value in largestValues)
+            {
+                Console.WriteLine(value);
+            }
+
             Console.ReadKey();
         }
     }

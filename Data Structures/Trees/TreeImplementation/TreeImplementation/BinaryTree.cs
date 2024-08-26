@@ -102,7 +102,29 @@ namespace TreeImplementation
             int left = LeafSum(node.Left);
             int right = LeafSum(node.Right);
             return left + right;
+        }
+        public List<int> LargestLevelValue()
+        {
+            List<int> largestValues = new List<int>();
+            LargestLevelValue(Root, 0, largestValues);
+            return largestValues;
+        }
+        public void LargestLevelValue(TNode node, int level, List<int> largestValues)
+        {
+            if (node == null) return;
 
+            // If this is the first time we visit this level, add the node's value
+            if (level == largestValues.Count)
+            {
+                largestValues.Add(node.Value);
+            }
+            else
+            // Otherwise, update the existing value if the current node's value is larger
+            {
+                largestValues[level] = Math.Max(largestValues[level], node.Value);
+            }
+            LargestLevelValue(node.Left, level + 1, largestValues);
+            LargestLevelValue(node.Right, level + 1, largestValues);
         }
         // ( Root - Left - Right )
         public void PreOrderTraversal(TNode node)
