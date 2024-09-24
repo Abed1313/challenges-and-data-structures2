@@ -185,5 +185,18 @@ namespace LinkedList
 
             return result.ToArray();
         }
+
+        public void RotateLeft( int k)
+        {
+            //1 , 2, 3, 4, 5
+            Node current = Head; //1
+            while (k != 0)
+            {
+                InsertLast(current.Data); //1 , 2, 3, 4, 5 ,1
+                DeleteSpecifiedData(current.Data);
+                current = current.Next; // 2
+                k--;
+            }
+        }
     }
 }
