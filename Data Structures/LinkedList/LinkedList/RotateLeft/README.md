@@ -5,4 +5,4 @@ The RotateLeft method rotates a linked list to the left by k positions. It start
 ### Whiteboard
 [Whiteboard Image](https://github.com/Abed1313/challenges-and-data-structures2/blob/LinkedList-Rotate-K/Data%20Structures/LinkedList/LinkedList/assets/RaoutetWhitpord.PNG)
 ### output:
-![Output Image](assets/.PNG)
+[Output Image](https://github.com/Abed1313/challenges-and-data-structures2/blob/LinkedList-Rotate-K/Data%20Structures/LinkedList/LinkedList/assets/RaoutetOutput.PNG)
