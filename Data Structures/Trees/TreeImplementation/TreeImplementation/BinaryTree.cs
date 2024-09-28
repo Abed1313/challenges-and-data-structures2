@@ -126,6 +126,35 @@ namespace TreeImplementation
             LargestLevelValue(node.Left, level + 1, largestValues);
             LargestLevelValue(node.Right, level + 1, largestValues);
         }
+
+        public void PrintRightView(TNode node)
+        {
+            if (node == null) return;
+
+            TNode current = node.Left;
+            while(node != null)
+            {
+                Console.WriteLine(node.Value);
+                node = node.Right;  
+            }
+            while(current != null)
+            {
+                TNode temp = current;
+                current = current.Right;
+
+                if(current == null && temp.Left !=null)
+                {
+                    current = temp.Left;
+                    current = current.Right;
+                }
+                if(current != null)
+                {
+                    Console.WriteLine(current.Value);
+                }
+            }
+        }
+
+
         // ( Root - Left - Right )
         public void PreOrderTraversal(TNode node)
         {
@@ -156,5 +185,7 @@ namespace TreeImplementation
             PostOrderTraversal(node.Right);
             Console.Write(node.Value + "  ");
         }
+
+        
     }
 }
