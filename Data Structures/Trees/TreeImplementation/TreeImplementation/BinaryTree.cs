@@ -103,31 +103,48 @@ namespace TreeImplementation
             int right = LeafSum(node.Right);
             return left + right;
         }
-        public List<int> LargestLevelValue()
+        public int LargestLevelValue()
         {
-            List<int> largestValues = new List<int>();
-            LargestLevelValue(Root, 0, largestValues);
-            return largestValues;
+            List<int> nodeCountsPerLevel = new List<int>();
+            // Start by calling the helper method to calculate the count of nodes at each level
+            LargestLevelValue(Root, 0, nodeCountsPerLevel);
+
+            // Find the level with the maximum node count
+            int maxLevel = 0;
+            int maxNodes = nodeCountsPerLevel[0];
+
+            for (int i = 1; i < nodeCountsPerLevel.Count; i++)
+            {
+                if (nodeCountsPerLevel[i] > maxNodes)
+                {
+                    maxNodes = nodeCountsPerLevel[i];
+                    maxLevel = i;
+                }
+            }
+
+            return maxLevel;
         }
-        public void LargestLevelValue(TNode node, int level, List<int> largestValues)
+
+        private void LargestLevelValue(TNode node, int level, List<int> nodeCountsPerLevel)
         {
             if (node == null) return;
 
-            // If this is the first time we visit this level, add the node's value
-            if (level == largestValues.Count)
+            // If this is the first time visiting this level, initialize the count for the level
+            if (level == nodeCountsPerLevel.Count)
             {
-                largestValues.Add(node.Value);
+                nodeCountsPerLevel.Add(0);
             }
-            else
-            // Otherwise, update the existing value if the current node's value is larger
-            {
-                largestValues[level] = Math.Max(largestValues[level], node.Value);
-            }
-            LargestLevelValue(node.Left, level + 1, largestValues);
-            LargestLevelValue(node.Right, level + 1, largestValues);
-        }
 
-        public void PrintRightView(TNode node)
+            // Increment the count for the current level
+            nodeCountsPerLevel[level]++;
+
+            // Recur for the left and right children
+            LargestLevelValue(node.Left, level + 1, nodeCountsPerLevel);
+            LargestLevelValue(node.Right, level + 1, nodeCountsPerLevel);
+        }
+    
+
+    public void PrintRightView(TNode node)
         {
             if (node == null) return;
 
@@ -152,6 +169,11 @@ namespace TreeImplementation
                     Console.WriteLine(current.Value);
                 }
             }
+        }
+
+        public void countTreeLevelAndNodes(TNode root)
+        {
+
         }
 
 
