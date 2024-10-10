@@ -144,36 +144,46 @@ namespace TreeImplementation
         }
     
 
-    public void PrintRightView(TNode node)
-        {
-            if (node == null) return;
-
-            TNode current = node.Left;
-            while(node != null)
+        public void PrintRightView(TNode node)
             {
-                Console.WriteLine(node.Value);
-                node = node.Right;  
-            }
-            while(current != null)
-            {
-                TNode temp = current;
-                current = current.Right;
+                if (node == null) return;
 
-                if(current == null && temp.Left !=null)
+                TNode current = node.Left;
+                while(node != null)
                 {
-                    current = temp.Left;
+                    Console.WriteLine(node.Value);
+                    node = node.Right;  
+                }
+                while(current != null)
+                {
+                    TNode temp = current;
                     current = current.Right;
-                }
-                if(current != null)
-                {
-                    Console.WriteLine(current.Value);
+
+                    if(current == null && temp.Left !=null)
+                    {
+                        current = temp.Left;
+                        current = current.Right;
+                    }
+                    if(current != null)
+                    {
+                        Console.WriteLine(current.Value);
+                    }
                 }
             }
-        }
 
-        public void countTreeLevelAndNodes(TNode root)
+        public int FindMinimumDepth(TNode node)
         {
+            if (node == null) return 0;
 
+            // If the node is a leaf node, return 1
+            if (node.Left == null && node.Right == null) return 1;
+
+            // If one child is null, recurse for the other child
+            if (node.Left == null) return FindMinimumDepth(node.Right) + 1;
+            if (node.Right == null) return FindMinimumDepth(node.Left) + 1;
+
+            // Return the minimum of the two depths
+            return Math.Min(FindMinimumDepth(node.Left), FindMinimumDepth(node.Right)) + 1;
         }
 
 
