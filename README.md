@@ -63,3 +63,6 @@
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/PrintRightView/README.md)
 ## Level with Maximum Number of Nodes
 [Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/LevelWithMaximumNumberOfNodes/README.md)
+## Find Minimum Depth
+[Link](https://github.com/Abed1313/challenges-and-data-structures2/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MinimumDepth/README.md)
+
